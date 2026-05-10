@@ -146,14 +146,18 @@ p { max-width: 68ch; }
 
 .site-nav__logo {
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
   font-weight: 600;
-  color: var(--teal);
   letter-spacing: -0.02em;
   text-decoration: none;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
-.site-nav__logo:hover { text-decoration: none; opacity: 0.88; }
+.site-nav__logo:hover { opacity: 0.85; text-decoration: none; }
+
+.site-nav__logo-claro { color: #fff; }
+.site-nav__logo-sec   { color: var(--teal); }
 
 .site-nav__cta {
   font-family: var(--font-body);

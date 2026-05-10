@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem *)",
+      "Read(//mnt/c/ClaroSec/**)",
+      "Bash(npm run *)"
+    ]
+  }
+}
